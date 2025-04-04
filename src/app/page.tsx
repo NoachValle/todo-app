@@ -40,10 +40,10 @@ export default function Home() {
         }} className="py-2.5 px-5  text-white bg-white rounded-full  border-gray-200 hover:bg-teal-500 hover:text-blue-700  focus:ring-gray-100 dark:focus:ring-teal-700 dark:bg-teal-900 dark:text-gray-400 dark:border-gray-600 dark:hover:text-white dark:hover:bg-gray-700">Add</button>
       </form>
 
-      <ul className="flex items-center justify-between flex-col">
+      <ul className="flex items-center justify-between flex-col h-64 w-64 overflow-auto m-5">
         {
           todolist.length >= 1 ? todolist.map((listItem, idx) => {
-            return <li className=" text-2xl bg-teal-900 list-decimal  border-2 border-teal-700 rounded-xl p-2 m-4" key={idx}>{listItem} 
+            return <li className=" text-xl bg-teal-900 list-decimal border-2 border-teal-700 rounded-xl p-2 m-3" key={idx}>{listItem} 
             <button
               className="focus:outline-none text-white bg-red-700 hover:bg-red-800 focus:ring-4 focus:ring-red-300 font-medium rounded-lg text-sm p-4 m-2 dark:bg-red-600 dark:hover:bg-red-700 dark:focus:ring-red-900"
               onClick={(eve) => {
